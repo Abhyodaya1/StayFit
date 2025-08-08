@@ -5,7 +5,18 @@ import AntDesign from '@expo/vector-icons/AntDesign'
 
 export default function _layout() {
   return (
-    <Tabs>
+    <Tabs
+    screenOptions={{
+      headerShown: false,
+      tabBarStyle: {
+        backgroundColor: '#1E3A8A', // solid background
+        borderTopWidth: 0, 
+        paddingTop:4// removes border line
+      },
+      tabBarActiveTintColor: '#fff', // active icon/text color
+      tabBarInactiveTintColor: '#999', // inactive icon/text color
+    }}
+    >
         <Tabs.Screen
         name="index"
         options={{
